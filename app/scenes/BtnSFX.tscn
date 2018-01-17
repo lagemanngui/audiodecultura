@@ -115,4 +115,6 @@ _sections_unfolded = [ "Pause" ]
 
 [connection signal="pressed" from="." to="AudioPlayer" method="play_sfx"]
 
+[connection signal="finished" from="AudioPlayer" to="." method="_on_AudioPlayer_finished"]
+
 

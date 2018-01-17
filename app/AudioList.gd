@@ -23,15 +23,15 @@ func _ready():
 
 func load_rogerinho():
 	rogerinho_list = [
-	{"name":"Encontrou, porra!", "path":"rog_encontrou_porra.ogg", "ep":"01"}
+	{"name":"Encontrou, porra!", "path":"rog_encontrou_porra.ogg", "ep":"01"},
+	{"name":"Circo do Marcos Frota", "path":"rog_circo_do_marcos.ogg", "ep": "01"}
 	]
 	
 	complete_path(rogerinho_list, rog_path)
 
 func load_renan():
 	renan_list = [
-	{"name":"Achou errado", "path":"errado.ogg", "ep":"12"},
-	{"name":"Aqui tem informação", "path":"informacao.ogg", "ep":"14"}
+	{"name":"Não tem Harry Potter", "path":"me_agredir_no_cinema.ogg", "ep": "01"}
 	]
 	
 	complete_path(renan_list, ren_path)

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rog_circo_do_marcos.ogg-7acb3edf2d60c5eceaed31e9c361dc9d.oggstr"
+
+[deps]
+
+source_file="res://rogerinho/sfx/rog_circo_do_marcos.ogg"
+source_md5="897ab65b61becd226127d364fe42de86"
+
+dest_files=[ "res://.import/rog_circo_do_marcos.ogg-7acb3edf2d60c5eceaed31e9c361dc9d.oggstr" ]
+dest_md5="3fcfb0b2da5abbd7476224e34b421a09"
+
+[params]
+
+loop=false
+loop_offset=0

@@ -8,6 +8,7 @@ var diff_speed = 0
 var scrolling = false
 onready var timer = get_node("Timer")
 var active = false
+var last_played = null
 
 func _ready():
 	set_process_input(true)
@@ -29,8 +30,7 @@ func _input(event):
 			scroller.set(
 			"scroll_vertical", scroller.get("scroll_vertical")+cur_speed
 			)
-		timer.start()
-		
+		timer.start()		
 
 
 
