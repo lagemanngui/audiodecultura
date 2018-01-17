@@ -1,0 +1,122 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scenes/Main.gd" type="Script" id=1]
+[ext_resource path="res://img/bg-main.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/GenericButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://rogerinho/img/rogbtn.jpg" type="Texture" id=4]
+[ext_resource path="res://renan/img/renbtn.jpg" type="Texture" id=5]
+[ext_resource path="res://maurilio/img/maubtn.jpg" type="Texture" id=6]
+[ext_resource path="res://julinho/img/julbtn.jpg" type="Texture" id=7]
+[ext_resource path="res://img/button_voltar.jpg" type="Texture" id=8]
+[ext_resource path="res://scenes/ScrollList.tscn" type="PackedScene" id=9]
+[ext_resource path="res://AudioList.gd" type="Script" id=10]
+
+[node name="Main" type="Node" index="0"]
+
+script = ExtResource( 1 )
+def_anim_speed = 0.2
+variant = 0.0
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="AnimControl" type="Tween" parent="." index="1"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="Rogerinho" parent="." index="2" groups=[
+"buttons",
+] instance=ExtResource( 3 )]
+
+margin_top = 420.0
+margin_bottom = 586.0
+texture_normal = ExtResource( 4 )
+_sections_unfolded = [ "Anchor", "Margin", "Rect", "Textures", "Visibility" ]
+btn_name = "Rogerinho"
+
+[node name="Renan" parent="." index="3" groups=[
+"buttons",
+] instance=ExtResource( 3 )]
+
+margin_top = 598.0
+margin_bottom = 764.0
+texture_normal = ExtResource( 5 )
+_sections_unfolded = [ "Margin", "Rect", "Textures" ]
+btn_name = "Renan"
+
+[node name="Maurilio" parent="." index="4" groups=[
+"buttons",
+] instance=ExtResource( 3 )]
+
+margin_top = 778.0
+margin_bottom = 944.0
+texture_normal = ExtResource( 6 )
+_sections_unfolded = [ "Margin", "Rect", "Textures" ]
+btn_name = "Maurilio"
+
+[node name="Julinho" parent="." index="5" groups=[
+"buttons",
+] instance=ExtResource( 3 )]
+
+margin_top = 957.0
+margin_bottom = 1123.0
+texture_normal = ExtResource( 7 )
+_sections_unfolded = [ "Margin", "Rect", "Textures", "Visibility" ]
+btn_name = "Julinho"
+
+[node name="Voltar" parent="." index="6" groups=[
+"buttons",
+] instance=ExtResource( 3 )]
+
+margin_left = 721.0
+margin_top = 420.0
+margin_right = 1441.0
+margin_bottom = 586.0
+texture_normal = ExtResource( 8 )
+btn_name = "Voltar"
+
+[node name="SfxList" parent="." index="7" groups=[
+"buttons",
+] instance=ExtResource( 9 )]
+
+margin_left = 724.0
+margin_top = 593.0
+margin_right = 1424.0
+margin_bottom = 1275.0
+
+[node name="AudioList" type="Control" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 10 )
+
+[connection signal="tween_completed" from="AnimControl" to="." method="on_anim_completed"]
+
+[connection signal="clicked" from="Rogerinho" to="." method="on_btn_clicked"]
+
+[connection signal="clicked" from="Renan" to="." method="on_btn_clicked"]
+
+[connection signal="clicked" from="Maurilio" to="." method="on_btn_clicked"]
+
+[connection signal="clicked" from="Julinho" to="." method="on_btn_clicked"]
+
+[connection signal="clicked" from="Voltar" to="." method="on_btn_clicked"]
+
+
