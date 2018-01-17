@@ -3,7 +3,7 @@
 [ext_resource path="res://scenes/ScrollListContainer.gd" type="Script" id=1]
 [ext_resource path="res://scenes/ScrollList.gd" type="Script" id=2]
 
-[node name="ScrollContainer" type="ScrollContainer" index="0"]
+[node name="ScrollContainer" type="ScrollContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0

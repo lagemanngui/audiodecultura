@@ -11,7 +11,7 @@
 [ext_resource path="res://scenes/ScrollList.tscn" type="PackedScene" id=9]
 [ext_resource path="res://AudioList.gd" type="Script" id=10]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 def_anim_speed = 0.2
@@ -89,7 +89,7 @@ btn_name = "Voltar"
 
 margin_left = 724.0
 margin_top = 593.0
-margin_right = 1424.0
+margin_right = 1436.0
 margin_bottom = 1275.0
 
 [node name="AudioList" type="Control" parent="." index="8"]
