@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cartoon003.wav-11127ec422551e1af1a3d83d8fc72dac.sample"
+
+[deps]
+
+source_file="res://cartoon003.wav"
+source_md5="f4cf098976e5b4c19d4b9aa1a6bd39fe"
+
+dest_files=[ "res://.import/cartoon003.wav-11127ec422551e1af1a3d83d8fc72dac.sample" ]
+dest_md5="d26c97657b2a36fb9a02dd58f387e2be"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=true
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
