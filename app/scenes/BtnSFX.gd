@@ -2,7 +2,7 @@ extends TextureButton
 
 var sfx = ""
 
-onready var audio_player = get_node("AudioPlayer")
+var audio_player
 
 func _ready():
 	pass
@@ -13,7 +13,9 @@ func set_label_name(param):
 
 func set_play_sfx(param):
 	sfx = param
-	#audio_player.set("stream", sfx)
+	var audio = load(param)
+	audio_player = get_node("AudioPlayer")
+	audio_player.set("stream", audio)
 	pass
 
 func set_label_ep(param):
