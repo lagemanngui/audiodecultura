@@ -163,4 +163,6 @@ func on_anim_completed( object, key ):
 		if anim_op == ANIM_SHOW:
 			sfxlist.clear_btns()
 			
-		
+
+func show_info():
+	get_tree().change_scene("res://scenes/InfoScene.tscn")

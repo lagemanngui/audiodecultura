@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://img/bg-main.jpg" type="Texture" id=2]
@@ -10,8 +10,9 @@
 [ext_resource path="res://img/button_voltar.jpg" type="Texture" id=8]
 [ext_resource path="res://scenes/ScrollList.tscn" type="PackedScene" id=9]
 [ext_resource path="res://AudioList.gd" type="Script" id=10]
+[ext_resource path="res://img/info.png" type="Texture" id=11]
 
-[node name="Main" type="Node" index="0"]
+[node name="Main" type="Node"]
 
 script = ExtResource( 1 )
 def_anim_speed = 0.2
@@ -107,6 +108,30 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 10 )
 
+[node name="Info" type="TextureButton" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 668.0
+margin_top = 20.0
+margin_right = 704.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 11 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
 [connection signal="tween_completed" from="AnimControl" to="." method="on_anim_completed"]
 
 [connection signal="clicked" from="Rogerinho" to="." method="on_btn_clicked"]
@@ -118,5 +143,7 @@ script = ExtResource( 10 )
 [connection signal="clicked" from="Julinho" to="." method="on_btn_clicked"]
 
 [connection signal="clicked" from="Voltar" to="." method="on_btn_clicked"]
+
+[connection signal="pressed" from="Info" to="." method="show_info"]
 
 
