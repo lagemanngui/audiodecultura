@@ -117,8 +117,6 @@ _sections_unfolded = [ "Pause" ]
 [node name="picon" type="Sprite" parent="." index="4"]
 
 position = Vector2( 661.874, 31.5377 )
-z_index = 999
-z_as_relative = false
 texture = ExtResource( 5 )
 _sections_unfolded = [ "Material", "Visibility", "Z Index" ]
 

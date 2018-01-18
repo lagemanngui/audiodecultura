@@ -5,6 +5,7 @@ onready var tween = get_node("AnimControl")
 onready var back = get_node("Voltar")
 onready var sfxlist = get_node("SfxList")
 onready var audio_list = get_node("AudioList")
+onready var info_scene = get_node("InfoScene")
 
 #Constantes
 const ROGERINHO = "Rogerinho"
@@ -165,4 +166,5 @@ func on_anim_completed( object, key ):
 			
 
 func show_info():
-	get_tree().change_scene("res://scenes/InfoScene.tscn")
+	sfxlist.stop_all()
+	info_scene.set("rect_position", Vector2(0,0))

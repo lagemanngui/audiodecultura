@@ -9,5 +9,5 @@ func _ready():
 
 
 func _on_close_pressed():
-	get_tree().change_scene("res://scenes/Main.tscn")
+	self.set("rect_position", Vector2(1000,0))
 	pass

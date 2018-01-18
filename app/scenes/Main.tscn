@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://img/bg-main.jpg" type="Texture" id=2]
@@ -11,8 +11,9 @@
 [ext_resource path="res://scenes/ScrollList.tscn" type="PackedScene" id=9]
 [ext_resource path="res://AudioList.gd" type="Script" id=10]
 [ext_resource path="res://img/info.png" type="Texture" id=11]
+[ext_resource path="res://scenes/InfoScene.tscn" type="PackedScene" id=12]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 def_anim_speed = 0.2
@@ -114,10 +115,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 668.0
-margin_top = 20.0
-margin_right = 704.0
-margin_bottom = 56.0
+margin_left = 640.0
+margin_top = 43.0
+margin_right = 680.0
+margin_bottom = 83.0
 rect_pivot_offset = Vector2( 0, 0 )
 focus_mode = 2
 mouse_filter = 0
@@ -131,6 +132,14 @@ group = null
 texture_normal = ExtResource( 11 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="InfoScene" parent="." index="10" instance=ExtResource( 12 )]
+
+margin_left = -3.0
+margin_top = 1283.0
+margin_right = -3.0
+margin_bottom = 1283.0
+_sections_unfolded = [ "Rect", "Visibility" ]
 
 [connection signal="tween_completed" from="AnimControl" to="." method="on_anim_completed"]
 
