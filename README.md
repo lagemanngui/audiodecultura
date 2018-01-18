@@ -46,3 +46,7 @@ Nesse caso você pode:
 
 Entre em contato comigo aqui pelo Github, ou pelo [Facebook](https://facebook.com/guilherme.lagemann) 
 ou pelo [Twitter](https://twitter.com/lagemanngui).
+
+![alt text][tudocomputador]
+
+[tudocomputador]: https://pbs.twimg.com/media/DDCt6zOWsAAOOZk.jpg
