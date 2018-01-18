@@ -5,8 +5,8 @@ divulgar a cultura (ou o choque dela).*
 
 Áudios com as pérolas do programa Choque de Cultura!
 
-#Gostaria de Contribuir?
-##Sim, enviando novos áudios do programa!
+# Gostaria de Contribuir?
+## Sim, enviando novos áudios do programa!
 
 Então basta esses passos simples:
 
@@ -19,7 +19,7 @@ Então basta esses passos simples:
 3. No arquivo *AudioList.gd* adicione um novo elemento no *array* de sons do personagem desejado
 4. Salve, teste e envie um *pull request*
 
-##Sim, quero contribuir com o desenvolvimento geral do app!
+## Sim, quero contribuir com o desenvolvimento geral do app!
 
 Nesse caso você pode:
 
