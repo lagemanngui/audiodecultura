@@ -14,7 +14,7 @@ use_filter = true
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Resource", "Settings" ]
 
-[node name="TextureButton" type="TextureButton" index="0"]
+[node name="TextureButton" type="TextureButton"]
 
 anchor_left = 0.0
 anchor_top = 0.0

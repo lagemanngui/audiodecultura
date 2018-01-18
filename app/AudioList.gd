@@ -39,8 +39,8 @@ func load_renan():
 	pass
 func load_maurilio():
 	maurilio_list = [
-	{"name":"Achou errado", "path":"errado.ogg", "ep":"12"},
-	{"name":"Aqui tem informação", "path":"informacao.ogg", "ep":"14"}
+	{"name":"Boa noite, amantes de cinema", "path":"amantes_de_cinema.ogg", "ep":"02"}
+
 	]
 	
 	complete_path(maurilio_list, mau_path)
@@ -49,8 +49,8 @@ func load_maurilio():
 
 func load_julinho():
 	julinho_list = [
-	{"name":"Achou errado", "path":"errado.ogg", "ep":"12"},
-	{"name":"Aqui tem informação", "path":"informacao.ogg", "ep":"14"}
+	{"name":"Boa noite, pilotos", "path":"boa_noite_pilotos.ogg", "ep":"01"},
+	{"name":"Não tem Conrado", "path":"nao_tem_conrado.ogg", "ep":"01"}
 	]
 	
 	complete_path(julinho_list, jul_path)

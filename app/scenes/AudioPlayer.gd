@@ -15,7 +15,7 @@ func play_sfx():
 				get_parent().stop_sfx()
 				return 0
 			
-	parent_list.stop_all()	
+	parent_list.stop_all()
 	get_parent().emit_signal("start_play")
 	self.play(0)
 	
