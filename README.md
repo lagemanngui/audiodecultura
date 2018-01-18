@@ -14,12 +14,15 @@ Para conhecer mais sobre: [Godot Engine 3.0](https://godotengine.org/)*
 Áudios com as pérolas do programa Choque de Cultura!
 
 # Gostaria de Contribuir?
+
+Antes de mais nada, você precisará da Godot 3.0, link [aqui](https://godotengine.org/)
+
 ## Sim, enviando novos áudios do programa!
 
 Então basta esses passos simples:
 
 1. Clone esse repositório
-2. Adicione o arquivo de áudio na pasta 'personagem/sfx', onde 'personagem' pode ser:
+2. Adicione o arquivo de áudio (**no formato .ogg**) na pasta 'personagem/sfx', onde 'personagem' pode ser:
 * rogerinho
 * renan
 * maurilio
