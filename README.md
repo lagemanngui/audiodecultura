@@ -35,3 +35,8 @@ Nesse caso você pode:
 2. Resolver um issue aberto
 3. Clonar o respositório e ser feliz fazendo o que quiser
 4. Seria legal se você me avisasse que está trabalhando nesse app
+
+## Quero contribuir de outra forma ou estou com dificuldades/dúvidas
+
+Entre em contato comigo aqui pelo Github, ou pelo [Facebook](https://facebook.com/guilherme.lagemann) 
+ou pelo [Twitter](https://twitter.com/lagemanngui).
