@@ -1,7 +1,15 @@
 # Áudio de Cultura
 ## Achou que não ia ter aplicativo? Achou errado, otário!
+
+**Disclaimer**
 *Este é um projeto Open Source, com fins de aprendizagem e para
 divulgar a cultura (ou o choque dela).*
+
+**Disclaimer 2**
+*Este projeto foi desenvolvido usando uma engine open source voltada para jogos,
+por isso algumas coisas podem parecer estranhas neste 'aplicativo'
+Para conhecer mais sobre: [Godot Engine 3.0](https://godotengine.org/)*
+
 
 Áudios com as pérolas do programa Choque de Cultura!
 
