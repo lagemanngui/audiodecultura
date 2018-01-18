@@ -1,6 +1,9 @@
 # Áudio de Cultura
 ## Achou que não ia ter aplicativo? Achou errado, otário!
 
+Aplicativo para Android com as pérolas do programa Choque de Cultura, produzidos pela [TvQuase](https://www.youtube.com/user/tvquase) e [Omelete](https://www.youtube.com/user/omeleteve),
+ no YouTube!
+
 **Disclaimer**
 *Este é um projeto Open Source, com fins de aprendizagem e para
 divulgar a cultura (ou o choque dela).*
@@ -11,7 +14,7 @@ por isso algumas coisas podem parecer estranhas neste 'aplicativo'
 Para conhecer mais sobre: [Godot Engine 3.0](https://godotengine.org/)*
 
 
-Áudios com as pérolas do programa Choque de Cultura!
+
 
 # Gostaria de Contribuir?
 
