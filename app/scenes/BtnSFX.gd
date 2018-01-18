@@ -29,8 +29,18 @@ func stop_sfx():
 	print("Stop?")
 	audio_player = get_node("AudioPlayer")
 	audio_player.stop()
+	emit_signal("finished_play")
+	get_node("picon").modulate = Color("ffffff")	
+	
 	
 func _on_AudioPlayer_finished():
+	get_node("picon").modulate = Color("ffffff")	
 	emit_signal("finished_play")
 	playing = false
+	pass
+
+
+func _on_TextureButton_start_play():
+	get_node("picon").modulate = Color("00ffb5")
+	playing = true
 	pass

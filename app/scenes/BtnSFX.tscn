@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://img/btn_def.png" type="Texture" id=1]
 [ext_resource path="res://scenes/BtnSFX.gd" type="Script" id=2]
 [ext_resource path="res://fonts/arial.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/AudioPlayer.gd" type="Script" id=4]
+[ext_resource path="res://img/music-player (1).png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -13,7 +14,7 @@ use_filter = true
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Resource", "Settings" ]
 
-[node name="TextureButton" type="TextureButton"]
+[node name="TextureButton" type="TextureButton" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -113,7 +114,17 @@ bus = "Master"
 script = ExtResource( 4 )
 _sections_unfolded = [ "Pause" ]
 
+[node name="picon" type="Sprite" parent="." index="4"]
+
+position = Vector2( 661.874, 31.5377 )
+z_index = 999
+z_as_relative = false
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Material", "Visibility", "Z Index" ]
+
 [connection signal="pressed" from="." to="AudioPlayer" method="play_sfx"]
+
+[connection signal="start_play" from="." to="." method="_on_TextureButton_start_play"]
 
 [connection signal="finished" from="AudioPlayer" to="." method="_on_AudioPlayer_finished"]
 
