@@ -24,7 +24,7 @@ shortcut = null
 group = null
 texture_normal = ExtResource( 1 )
 script = ExtResource( 2 )
-_sections_unfolded = [ "Textures" ]
+_sections_unfolded = [ "Textures", "Visibility" ]
 btn_name = "Generic"
 
 [node name="Control" type="Control" parent="." index="0"]

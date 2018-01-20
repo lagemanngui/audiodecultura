@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/adulto_esquisito.ogg-4521670b2d031b95fe0002b13ba57712.oggstr"
+
+[deps]
+
+source_file="res://renan/sfx/adulto_esquisito.ogg"
+source_md5="9c5104151be05fe55b30687116eb88f3"
+
+dest_files=[ "res://.import/adulto_esquisito.ogg-4521670b2d031b95fe0002b13ba57712.oggstr" ]
+dest_md5="6e783b809cf647825f7754109fcf53c0"
+
+[params]
+
+loop=false
+loop_offset=0

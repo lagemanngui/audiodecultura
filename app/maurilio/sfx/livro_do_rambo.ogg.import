@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/livro_do_rambo.ogg-38c2b0622875ba5ccf4f90bea6e4bf60.oggstr"
+
+[deps]
+
+source_file="res://maurilio/sfx/livro_do_rambo.ogg"
+source_md5="312e93f9a0f4cfbc0f73fcd9777cb949"
+
+dest_files=[ "res://.import/livro_do_rambo.ogg-38c2b0622875ba5ccf4f90bea6e4bf60.oggstr" ]
+dest_md5="5b69a8ab2692c223e2225f971610b166"
+
+[params]
+
+loop=false
+loop_offset=0

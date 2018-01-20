@@ -3,7 +3,7 @@
 [ext_resource path="res://scenes/ScrollListContainer.gd" type="Script" id=1]
 [ext_resource path="res://scenes/ScrollList.gd" type="Script" id=2]
 
-[node name="ScrollContainer" type="ScrollContainer"]
+[node name="ScrollContainer" type="ScrollContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -44,14 +44,5 @@ alignment = 0
 script = ExtResource( 2 )
 _sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_constants" ]
 d_speed = 8
-
-[node name="Timer" type="Timer" parent="VBoxContainer" index="0"]
-
-process_mode = 1
-wait_time = 0.1
-one_shot = true
-autostart = false
-
-[connection signal="timeout" from="VBoxContainer/Timer" to="VBoxContainer" method="_on_Timer_timeout"]
 
 

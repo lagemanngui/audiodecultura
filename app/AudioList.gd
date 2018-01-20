@@ -31,7 +31,18 @@ func load_rogerinho():
 
 func load_renan():
 	renan_list = [
-	{"name":"Não tem Harry Potter", "path":"me_agredir_no_cinema.ogg", "ep": "01"}
+	{"name":"Não tem Harry Potter", "path":"me_agredir_no_cinema.ogg", "ep": "01"},
+	{"name":"Adulto esquisito", "path":"adulto_esquisito.ogg", "ep": "01"},
+	{"name":"Excelente filme!", "path":"excelente_filme.ogg", "ep": "01"},
+	{"name":"Água na cara eu sou contra", "path":"contra_agua_nacara.ogg", "ep": "01"},
+	{"name":"Fazer curso pra ver o filme", "path":"tem_que_fazer_curso.ogg", "ep": "01"},
+	{"name":"Ele tem talento pra isso!", "path":"talento_pra_isso.ogg", "ep": "01"},
+	{"name":"Tem que ter Rambo", "path":"tem_rambo.ogg", "ep": "01"},
+	{"name":"Filme nacional tem livro?", "path":"filme_nacional_tem_livro.ogg", "ep": "01"}	
+		
+		
+	
+	
 	]
 	
 	complete_path(renan_list, ren_path)
@@ -39,8 +50,11 @@ func load_renan():
 	pass
 func load_maurilio():
 	maurilio_list = [
-	{"name":"Boa noite, amantes de cinema", "path":"amantes_de_cinema.ogg", "ep":"02"}
-
+	{"name":"Boa noite, amantes de cinema", "path":"amantes_de_cinema.ogg", "ep":"01"},
+	{"name":"Harry Golpe", "path":"harry_golpe.ogg", "ep":"01"},
+	{"name":"Spin Off", "path":"spin_off.ogg", "ep":"01"},
+	{"name":"Livro do Rambo", "path":"livro_do_rambo.ogg", "ep":"01"}
+	
 	]
 	
 	complete_path(maurilio_list, mau_path)
@@ -50,7 +64,12 @@ func load_maurilio():
 func load_julinho():
 	julinho_list = [
 	{"name":"Boa noite, pilotos", "path":"boa_noite_pilotos.ogg", "ep":"01"},
-	{"name":"Não tem Conrado", "path":"nao_tem_conrado.ogg", "ep":"01"}
+	{"name":"Não tem Conrado", "path":"nao_tem_conrado.ogg", "ep":"01"},
+	{"name":"Se Eu Fosse Você 2", "path":"fosse_voce_2.ogg", "ep":"01"},
+	{"name":"Me permite um protesto", "path":"protesto.ogg", "ep":"01"},
+	{"name":"Como tu chega em mulher?", "path":"como_tu_chega_em_mulher.ogg", "ep":"01"},
+	{"name":"Me da aquela moralzinha", "path":"me_da_moralzinha.ogg", "ep":"01"}
+	
 	]
 	
 	complete_path(julinho_list, jul_path)

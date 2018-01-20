@@ -22,7 +22,7 @@ export var def_anim_speed = 0.3
 #Variação na velocidade de animação (Remover depois)
 export var variant = 0.0
 #Quantidade de itens 'botoes' para animar
-var buttons = 6
+var buttons = 9
 #Botoes animados ate o momento, segura o comando do app
 #quando chega a 'buttons' libera o comando para o usuário
 var cur_btns = 0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/me_da_moralzinha.ogg-ebb56a59297d7f718dbd533776718a8c.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/me_da_moralzinha.ogg"
+source_md5="43b7d30c91df00da3bfc96e1afb03c3b"
+
+dest_files=[ "res://.import/me_da_moralzinha.ogg-ebb56a59297d7f718dbd533776718a8c.oggstr" ]
+dest_md5="1d8d87a436f7d371ccaea50a335aec67"
+
+[params]
+
+loop=false
+loop_offset=0
