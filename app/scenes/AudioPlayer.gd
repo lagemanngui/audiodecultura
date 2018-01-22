@@ -7,8 +7,13 @@ func _ready():
 
 
 func play_sfx():
+		
+	if get_parent().get_parent().just_pressed:
+		return 0
 	
 	parent_list = get_parent().get_parent().get_parent()
+		
+		
 	if parent_list.last_play != null:
 		if parent_list.last_play.get_name() == get_parent().get_name():
 			if self.playing:
@@ -17,10 +22,7 @@ func play_sfx():
 			
 	parent_list.stop_all()
 	get_parent().emit_signal("start_play")
-	self.play(0)
-	
-	
-	
+	self.play(0)	
 		
 	
 	pass

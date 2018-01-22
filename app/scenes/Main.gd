@@ -168,3 +168,17 @@ func on_anim_completed( object, key ):
 func show_info():
 	sfxlist.stop_all()
 	info_scene.set("rect_position", Vector2(0,0))
+
+
+func _on_Youtube_pressed():
+	OS.shell_open("https://www.youtube.com/channel/UCaSAM5kna2KyX-uVLSGr8PQ")
+
+
+func _on_Twitter_pressed():
+	OS.shell_open("https://twitter.com/TVQuase")
+	pass
+
+
+func _on_Facebook_pressed():
+	OS.shell_open("https://www.facebook.com/tvQuase/")
+	pass

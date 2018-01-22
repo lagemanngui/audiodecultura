@@ -17,7 +17,6 @@ func create_btn(titulo, play, ep):
 	btn_ins.set_label_name(titulo)
 	btn_ins.set_play_sfx(play)
 	btn_ins.set_label_ep(ep)
-	btn_ins.connect("pressed", get_node("VBoxContainer"), "list_btn_pressed", [btn_ins])
 	btn_ins.connect("finished_play", self, "on_btn_finished")
 	btn_ins.connect("start_play", self, "on_btn_start", [btn_ins])
 	btn_ins.add_to_group("sfx_btns")
@@ -28,7 +27,7 @@ func stop_all():
 		node.stop_sfx()
 	
 func on_btn_finished():
-	print("Terminou de tocar")
+	pass
 
 func on_btn_start(arg):
 	if last_play != null:
@@ -41,7 +40,7 @@ func on_btn_start(arg):
 	
 	
 func clear_btns():
-	last_play = null	
+	last_play = null
 	for node in get_node("VBoxContainer").get_children():
 		if node is TextureButton:
 			node.queue_free()

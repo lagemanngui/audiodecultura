@@ -43,6 +43,15 @@ custom_constants/separation = 10
 alignment = 0
 script = ExtResource( 2 )
 _sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_constants" ]
-d_speed = 8
+d_speed = 1
+
+[node name="ClickTimer" type="Timer" parent="VBoxContainer" index="0"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = true
+autostart = false
+
+[connection signal="timeout" from="VBoxContainer/ClickTimer" to="VBoxContainer" method="_on_ClickTimer_timeout"]
 
 

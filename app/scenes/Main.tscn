@@ -30,7 +30,7 @@ variant = 0.0
 
 texture = ExtResource( 2 )
 centered = false
-_sections_unfolded = [ "Offset", "Transform" ]
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Transform", "Visibility" ]
 
 [node name="AnimControl" type="Tween" parent="." index="1"]
 
@@ -243,5 +243,11 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 [connection signal="clicked" from="Julinho" to="." method="on_btn_clicked"]
 
 [connection signal="clicked" from="Voltar" to="." method="on_btn_clicked"]
+
+[connection signal="pressed" from="Youtube" to="." method="_on_Youtube_pressed"]
+
+[connection signal="pressed" from="Twitter" to="." method="_on_Twitter_pressed"]
+
+[connection signal="pressed" from="Facebook" to="." method="_on_Facebook_pressed"]
 
 

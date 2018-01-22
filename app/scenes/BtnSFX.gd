@@ -26,7 +26,6 @@ func set_label_ep(param):
 	get_node("EP").set("text", "#" + param)
 
 func stop_sfx():
-	print("Stop?")
 	audio_player = get_node("AudioPlayer")
 	audio_player.stop()
 	emit_signal("finished_play")
