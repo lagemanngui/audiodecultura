@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cultura_jovem.ogg-13c55804db20122bf658c1bd02d1ecfd.oggstr"
+
+[deps]
+
+source_file="res://rogerinho/sfx/cultura_jovem.ogg"
+source_md5="817de98efd37b97bc6720a2b6362076b"
+
+dest_files=[ "res://.import/cultura_jovem.ogg-13c55804db20122bf658c1bd02d1ecfd.oggstr" ]
+dest_md5="5dc95b284dd35ad25dd4f70692c8c299"
+
+[params]
+
+loop=false
+loop_offset=0

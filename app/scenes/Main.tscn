@@ -1,26 +1,28 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://img/bg-main.jpg" type="Texture" id=2]
-[ext_resource path="res://img/info.png" type="Texture" id=3]
-[ext_resource path="res://scenes/GenericButton.tscn" type="PackedScene" id=4]
-[ext_resource path="res://rogerinho/img/rogbtn.jpg" type="Texture" id=5]
-[ext_resource path="res://rogerinho/img/rogbtn_a.jpg" type="Texture" id=6]
-[ext_resource path="res://renan/img/renbtn.jpg" type="Texture" id=7]
-[ext_resource path="res://renan/img/renbtn_a.jpg" type="Texture" id=8]
-[ext_resource path="res://maurilio/img/maubtn.jpg" type="Texture" id=9]
-[ext_resource path="res://maurilio/img/maubtn_a.jpg" type="Texture" id=10]
-[ext_resource path="res://julinho/img/julbtn.jpg" type="Texture" id=11]
-[ext_resource path="res://julinho/img/julbtn_a.jpg" type="Texture" id=12]
-[ext_resource path="res://img/button_voltar.jpg" type="Texture" id=13]
-[ext_resource path="res://scenes/ScrollList.tscn" type="PackedScene" id=14]
-[ext_resource path="res://AudioList.gd" type="Script" id=15]
-[ext_resource path="res://img/youtube_.png" type="Texture" id=16]
-[ext_resource path="res://img/twitter_.png" type="Texture" id=17]
-[ext_resource path="res://img/facebook.png" type="Texture" id=18]
-[ext_resource path="res://scenes/InfoScene.tscn" type="PackedScene" id=19]
+[ext_resource path="res://img/white-bg.jpg" type="Texture" id=3]
+[ext_resource path="res://img/info.png" type="Texture" id=4]
+[ext_resource path="res://scenes/GenericButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://rogerinho/img/rogbtn.jpg" type="Texture" id=6]
+[ext_resource path="res://rogerinho/img/rogbtn_a.jpg" type="Texture" id=7]
+[ext_resource path="res://renan/img/renbtn.jpg" type="Texture" id=8]
+[ext_resource path="res://renan/img/renbtn_a.jpg" type="Texture" id=9]
+[ext_resource path="res://maurilio/img/maubtn.jpg" type="Texture" id=10]
+[ext_resource path="res://maurilio/img/maubtn_a.jpg" type="Texture" id=11]
+[ext_resource path="res://julinho/img/julbtn.jpg" type="Texture" id=12]
+[ext_resource path="res://julinho/img/julbtn_a.jpg" type="Texture" id=13]
+[ext_resource path="res://img/bg2.jpg" type="Texture" id=14]
+[ext_resource path="res://img/button_voltar.jpg" type="Texture" id=15]
+[ext_resource path="res://scenes/ScrollList.tscn" type="PackedScene" id=16]
+[ext_resource path="res://AudioList.gd" type="Script" id=17]
+[ext_resource path="res://img/youtube_.png" type="Texture" id=18]
+[ext_resource path="res://img/twitter_.png" type="Texture" id=19]
+[ext_resource path="res://img/facebook.png" type="Texture" id=20]
+[ext_resource path="res://scenes/InfoScene.tscn" type="PackedScene" id=21]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 def_anim_speed = 0.2
@@ -32,7 +34,13 @@ texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Transform", "Visibility" ]
 
-[node name="AnimControl" type="Tween" parent="." index="1"]
+[node name="white" type="Sprite" parent="." index="1"]
+
+position = Vector2( 360.118, 1183.67 )
+scale = Vector2( 0.999926, 0.694706 )
+texture = ExtResource( 3 )
+
+[node name="AnimControl" type="Tween" parent="." index="2"]
 
 repeat = false
 playback_process_mode = 1
@@ -41,7 +49,7 @@ playback/active = false
 playback/repeat = false
 playback/speed = 1.0
 
-[node name="Info" type="TextureButton" parent="." index="2"]
+[node name="Info" type="TextureButton" parent="." index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -61,75 +69,82 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 4 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="Rogerinho" parent="." index="3" groups=[
+[node name="Rogerinho" parent="." index="4" groups=[
 "buttons",
-] instance=ExtResource( 4 )]
+] instance=ExtResource( 5 )]
 
-margin_top = 420.0
-margin_bottom = 586.0
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 6 )
+margin_top = 404.0
+margin_bottom = 570.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 _sections_unfolded = [ "Anchor", "Margin", "Rect", "Textures", "Visibility" ]
 btn_name = "Rogerinho"
 
-[node name="Renan" parent="." index="4" groups=[
+[node name="Renan" parent="." index="5" groups=[
 "buttons",
-] instance=ExtResource( 4 )]
+] instance=ExtResource( 5 )]
 
-margin_top = 589.0
-margin_bottom = 755.0
-texture_normal = ExtResource( 7 )
-texture_pressed = ExtResource( 8 )
+margin_top = 573.0
+margin_bottom = 739.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
 _sections_unfolded = [ "Margin", "Rect", "Textures", "Visibility" ]
 btn_name = "Renan"
 
-[node name="Maurilio" parent="." index="5" groups=[
+[node name="Maurilio" parent="." index="6" groups=[
 "buttons",
-] instance=ExtResource( 4 )]
+] instance=ExtResource( 5 )]
 
-margin_top = 759.0
-margin_bottom = 925.0
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 10 )
+margin_top = 743.0
+margin_bottom = 909.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
 _sections_unfolded = [ "Margin", "Rect", "Textures", "Visibility" ]
 btn_name = "Maurilio"
 
-[node name="Julinho" parent="." index="6" groups=[
+[node name="Julinho" parent="." index="7" groups=[
 "buttons",
-] instance=ExtResource( 4 )]
+] instance=ExtResource( 5 )]
 
-margin_top = 929.0
-margin_bottom = 1095.0
-texture_normal = ExtResource( 11 )
-texture_pressed = ExtResource( 12 )
+margin_top = 913.0
+margin_bottom = 1079.0
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 13 )
 _sections_unfolded = [ "Margin", "Rect", "Textures", "Visibility" ]
 btn_name = "Julinho"
 
-[node name="Voltar" parent="." index="7" groups=[
+[node name="SecondBG" type="Sprite" parent="." index="8"]
+
+position = Vector2( 722.793, 1280.83 )
+texture = ExtResource( 14 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform", "Visibility" ]
+
+[node name="Voltar" parent="." index="9" groups=[
 "buttons",
-] instance=ExtResource( 4 )]
+] instance=ExtResource( 5 )]
 
 margin_left = 720.0
 margin_top = 1114.0
 margin_right = 1440.0
 margin_bottom = 1280.0
-texture_normal = ExtResource( 13 )
+texture_normal = ExtResource( 15 )
 btn_name = "Voltar"
 
-[node name="SfxList" parent="." index="8" groups=[
+[node name="SfxList" parent="." index="10" groups=[
 "buttons",
-] instance=ExtResource( 14 )]
+] instance=ExtResource( 16 )]
 
 margin_left = 730.0
-margin_top = 4.0
+margin_top = 174.0
 margin_right = 1442.0
 margin_bottom = 1102.0
 
-[node name="AudioList" type="Control" parent="." index="9"]
+[node name="AudioList" type="Control" parent="." index="11"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -142,9 +157,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 15 )
+script = ExtResource( 17 )
 
-[node name="Youtube" type="TextureButton" parent="." index="10" groups=[
+[node name="Youtube" type="TextureButton" parent="." index="12" groups=[
 "buttons",
 ]]
 
@@ -153,61 +168,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 93.0
-margin_top = 1123.0
+margin_top = 1128.0
 margin_right = 213.0
-margin_bottom = 1243.0
-rect_pivot_offset = Vector2( 0, 0 )
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 16 )
-expand = true
-_sections_unfolded = [ "Rect", "Textures" ]
-
-[node name="Twitter" type="TextureButton" parent="." index="11" groups=[
-"buttons",
-]]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 300.0
-margin_top = 1119.0
-margin_right = 420.0
-margin_bottom = 1239.0
-rect_pivot_offset = Vector2( 0, 0 )
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 17 )
-expand = true
-_sections_unfolded = [ "Rect", "Textures" ]
-
-[node name="Facebook" type="TextureButton" parent="." index="12" groups=[
-"buttons",
-]]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 502.0
-margin_top = 1119.0
-margin_right = 622.0
-margin_bottom = 1239.0
+margin_bottom = 1248.0
 rect_pivot_offset = Vector2( 0, 0 )
 focus_mode = 2
 mouse_filter = 0
@@ -222,13 +185,87 @@ texture_normal = ExtResource( 18 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="InfoScene" parent="." index="13" instance=ExtResource( 19 )]
+[node name="Twitter" type="TextureButton" parent="." index="13" groups=[
+"buttons",
+]]
 
-margin_left = -3.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 1124.0
+margin_right = 420.0
+margin_bottom = 1244.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 19 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Facebook" type="TextureButton" parent="." index="14" groups=[
+"buttons",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 502.0
+margin_top = 1124.0
+margin_right = 622.0
+margin_bottom = 1244.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 20 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="InfoScene" parent="." index="15" instance=ExtResource( 21 )]
+
 margin_top = 1283.0
-margin_right = -3.0
 margin_bottom = 1283.0
 _sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="CurrentAudio" type="TextureButton" parent="." index="16" groups=[
+"buttons",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 720.0
+margin_right = 1440.0
+margin_bottom = 166.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 6 )
+_sections_unfolded = [ "Offset", "Rect", "Textures" ]
 
 [connection signal="tween_completed" from="AnimControl" to="." method="on_anim_completed"]
 

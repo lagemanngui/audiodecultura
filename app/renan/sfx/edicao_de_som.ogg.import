@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/edicao_de_som.ogg-3091c4aadf0de319a082d2d631870049.oggstr"
+
+[deps]
+
+source_file="res://renan/sfx/edicao_de_som.ogg"
+source_md5="0a739733fb318b0881f2693a715f99a7"
+
+dest_files=[ "res://.import/edicao_de_som.ogg-3091c4aadf0de319a082d2d631870049.oggstr" ]
+dest_md5="92a72ec3cb793ed3e48614e50e89538a"
+
+[params]
+
+loop=false
+loop_offset=0

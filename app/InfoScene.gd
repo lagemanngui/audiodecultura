@@ -9,7 +9,8 @@ func _ready():
 
 
 func _on_close_pressed():
-	self.set("rect_position", Vector2(1000,0))
+	get_parent().last_scene = "Main"
+	self.set("rect_position", Vector2(2000,0))
 	pass
 
 

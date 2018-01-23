@@ -34,7 +34,7 @@ shortcut = null
 group = null
 texture_normal = ExtResource( 1 )
 script = ExtResource( 2 )
-_sections_unfolded = [ "Textures" ]
+_sections_unfolded = [ "Textures", "Visibility" ]
 
 [node name="Titulo" type="Label" parent="." index="0"]
 
@@ -116,7 +116,8 @@ _sections_unfolded = [ "Pause" ]
 
 [node name="picon" type="Sprite" parent="." index="4"]
 
-position = Vector2( 661.874, 31.5377 )
+position = Vector2( 653.353, 40.0583 )
+scale = Vector2( 1.53254, 1.53254 )
 texture = ExtResource( 5 )
 _sections_unfolded = [ "Material", "Visibility", "Z Index" ]
 

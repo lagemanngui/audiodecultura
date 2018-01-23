@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/topera_voar.ogg-b406eff71d22a84534faca477702da79.oggstr"
+
+[deps]
+
+source_file="res://renan/sfx/topera_voar.ogg"
+source_md5="d54a54901e949bc11d53101c27c14677"
+
+dest_files=[ "res://.import/topera_voar.ogg-b406eff71d22a84534faca477702da79.oggstr" ]
+dest_md5="4d5b54617b35af4d9892d449b2070d3c"
+
+[params]
+
+loop=false
+loop_offset=0

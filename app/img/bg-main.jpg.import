@@ -7,10 +7,10 @@ path="res://.import/bg-main.jpg-ac4c57adee85d2f64de346fcb9c9070b.stex"
 [deps]
 
 source_file="res://img/bg-main.jpg"
-source_md5="d037410fb861d5503a55559165d829ce"
+source_md5="279b28d7395449f2479d61e2dac34952"
 
 dest_files=[ "res://.import/bg-main.jpg-ac4c57adee85d2f64de346fcb9c9070b.stex" ]
-dest_md5="87032ef6075c44d22d197d4c5bf6acb6"
+dest_md5="4da770dcd0101651d08c8a1c715546c2"
 
 [params]
 

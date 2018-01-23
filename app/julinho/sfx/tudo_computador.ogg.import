@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tudo_computador.ogg-2d3d0b0381e020770a3b4bcad3866cad.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/tudo_computador.ogg"
+source_md5="b0f58fa35308f964714a3042dc5a3ddc"
+
+dest_files=[ "res://.import/tudo_computador.ogg-2d3d0b0381e020770a3b4bcad3866cad.oggstr" ]
+dest_md5="879160c25247ebef7083742d35e5debc"
+
+[params]
+
+loop=false
+loop_offset=0

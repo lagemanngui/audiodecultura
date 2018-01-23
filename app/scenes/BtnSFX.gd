@@ -40,6 +40,6 @@ func _on_AudioPlayer_finished():
 
 
 func _on_TextureButton_start_play():
-	get_node("picon").modulate = Color("00ffb5")
+	get_node("picon").modulate = Color("2dff20")
 	playing = true
 	pass
