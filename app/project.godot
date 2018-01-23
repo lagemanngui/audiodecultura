@@ -12,8 +12,6 @@ config_version=3
 
 config/name="Audio de Cultura"
 run/main_scene="res://scenes/Main.tscn"
-run/disable_stdout=true
-run/disable_stderr=true
 boot_splash/image="res://img/black.png"
 config/icon="res://img/icon_renan_big.png"
 config/quit_on_go_back=false
@@ -41,5 +39,4 @@ common/fixed_fps=30
 
 [rendering]
 
-quality/intended_usage/framebuffer_allocation=0
 environment/default_environment="res://default_env.tres"

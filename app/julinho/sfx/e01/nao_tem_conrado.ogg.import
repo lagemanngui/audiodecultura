@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/nao_tem_conrado.ogg-107e02b4562bf592edd61d41ee690a8d.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e01/nao_tem_conrado.ogg"
+source_md5="0a5a757ecba46c8f7e35351c1eb36349"
+
+dest_files=[ "res://.import/nao_tem_conrado.ogg-107e02b4562bf592edd61d41ee690a8d.oggstr" ]
+dest_md5="ff323c35e138b98d69fa164b94c29502"
+
+[params]
+
+loop=false
+loop_offset=0

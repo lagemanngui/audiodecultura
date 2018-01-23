@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/urso_cultura_jovem.ogg-72bf3f15076f201c4ac4e7fa6ea0dd72.oggstr"
+
+[deps]
+
+source_file="res://renan/sfx/e02/urso_cultura_jovem.ogg"
+source_md5="560609a994ad92434276243c2f3f806d"
+
+dest_files=[ "res://.import/urso_cultura_jovem.ogg-72bf3f15076f201c4ac4e7fa6ea0dd72.oggstr" ]
+dest_md5="1f188713aaddd0fb0523f9d80e10341a"
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/como_tu_chega_em_mulher.ogg-cedf26ce87679bbe37a4520abe5e8a8c.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e01/como_tu_chega_em_mulher.ogg"
+source_md5="16dcbbaa5d735cea50bc68de55a948ba"
+
+dest_files=[ "res://.import/como_tu_chega_em_mulher.ogg-cedf26ce87679bbe37a4520abe5e8a8c.oggstr" ]
+dest_md5="d3b4d736bef4e47b442fe6c63c8673c8"
+
+[params]
+
+loop=false
+loop_offset=0

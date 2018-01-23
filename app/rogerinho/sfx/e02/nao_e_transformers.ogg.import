@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/nao_e_transformers.ogg-4bfd622bcc8722b94aa73b9b0cce74c4.oggstr"
+
+[deps]
+
+source_file="res://rogerinho/sfx/e02/nao_e_transformers.ogg"
+source_md5="409530a5dc0c9170486357678998f1b5"
+
+dest_files=[ "res://.import/nao_e_transformers.ogg-4bfd622bcc8722b94aa73b9b0cce74c4.oggstr" ]
+dest_md5="857cf6dc1bba6564044189ec16012248"
+
+[params]
+
+loop=false
+loop_offset=0

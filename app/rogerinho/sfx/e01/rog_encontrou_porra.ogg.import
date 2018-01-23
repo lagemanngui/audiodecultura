@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rog_encontrou_porra.ogg-fbb5f79c3ddab021dafe33848ae13cbc.oggstr"
+
+[deps]
+
+source_file="res://rogerinho/sfx/e01/rog_encontrou_porra.ogg"
+source_md5="05a982b8f5ed7a49a7fbc08ca8b2db31"
+
+dest_files=[ "res://.import/rog_encontrou_porra.ogg-fbb5f79c3ddab021dafe33848ae13cbc.oggstr" ]
+dest_md5="84d335f5eb4ed1686fbb7d39ba1e6157"
+
+[params]
+
+loop=false
+loop_offset=0

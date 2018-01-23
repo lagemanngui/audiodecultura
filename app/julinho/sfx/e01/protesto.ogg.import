@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/protesto.ogg-377654c6d7e7d8f3863591a60d6ebc40.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e01/protesto.ogg"
+source_md5="3a4154ebccaca66dbbf3796438606d31"
+
+dest_files=[ "res://.import/protesto.ogg-377654c6d7e7d8f3863591a60d6ebc40.oggstr" ]
+dest_md5="d6a1a889b5a82fd9b050ce66868761c5"
+
+[params]
+
+loop=false
+loop_offset=0

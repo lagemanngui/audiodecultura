@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/e_um_pato.ogg-d8ae8f091193784ac8d026c888a99b64.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e02/e_um_pato.ogg"
+source_md5="6aeca00c0e7b8582c4e872057e2852cd"
+
+dest_files=[ "res://.import/e_um_pato.ogg-d8ae8f091193784ac8d026c888a99b64.oggstr" ]
+dest_md5="e49ef23c02f82f636875a9bb1e05e18f"
+
+[params]
+
+loop=false
+loop_offset=0

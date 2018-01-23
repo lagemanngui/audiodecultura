@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/amantes_de_cinema.ogg-127ccb9c213f8c5e5c126d0d8c9c3fcb.oggstr"
+
+[deps]
+
+source_file="res://maurilio/sfx/e01/amantes_de_cinema.ogg"
+source_md5="d3f47bd196091f125509c1e18f6f4800"
+
+dest_files=[ "res://.import/amantes_de_cinema.ogg-127ccb9c213f8c5e5c126d0d8c9c3fcb.oggstr" ]
+dest_md5="61296784f16c28c9bdeabc13ccd1b67c"
+
+[params]
+
+loop=false
+loop_offset=0

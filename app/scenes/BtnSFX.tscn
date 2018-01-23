@@ -14,7 +14,7 @@ use_filter = true
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Resource", "Settings" ]
 
-[node name="TextureButton" type="TextureButton"]
+[node name="TextureButton" type="TextureButton" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -107,7 +107,7 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 [node name="AudioPlayer" type="AudioStreamPlayer" parent="." index="3"]
 
 stream = null
-volume_db = 0.0
+volume_db = 5.0
 autoplay = false
 mix_target = 2
 bus = "Master"

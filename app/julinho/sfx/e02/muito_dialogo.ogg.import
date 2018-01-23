@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/muito_dialogo.ogg-aaab1db456c9fce2e1ddf6b5f1d746ab.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e02/muito_dialogo.ogg"
+source_md5="202f97618957b0eb82999068ca0aa858"
+
+dest_files=[ "res://.import/muito_dialogo.ogg-aaab1db456c9fce2e1ddf6b5f1d746ab.oggstr" ]
+dest_md5="492a7b44ada763d1b7270253c111a6aa"
+
+[params]
+
+loop=false
+loop_offset=0

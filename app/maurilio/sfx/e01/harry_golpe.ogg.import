@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/harry_golpe.ogg-595180cbd0b0c8cf31a1f33da8d4b682.oggstr"
+
+[deps]
+
+source_file="res://maurilio/sfx/e01/harry_golpe.ogg"
+source_md5="a5ba04194f21fff72778a02227c16179"
+
+dest_files=[ "res://.import/harry_golpe.ogg-595180cbd0b0c8cf31a1f33da8d4b682.oggstr" ]
+dest_md5="9188a8ec45adbe123e12ccceba629f62"
+
+[params]
+
+loop=false
+loop_offset=0

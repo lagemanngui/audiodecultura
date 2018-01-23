@@ -19,8 +19,28 @@ func _ready():
 	load_maurilio()
 	load_julinho()
 	
-	pass
+	#var test = load_files(rog_path)
+	#for item in test:
+	#	print(item)
 
+#Pega os arquivos no diretório (não utilizada ainda)
+func load_files(path):
+	var files = []
+	var dir = Directory.new()
+	dir.open(path)
+	dir.list_dir_begin()
+	
+	while true:
+		var file = dir.get_next()
+		if file == "":
+			break
+		elif !file.begins_with(".") && !file.ends_with(".import"):
+			files.append(file)
+
+	dir.list_dir_end()
+	return files
+	
+	
 func load_rogerinho():
 	rogerinho_list = [
 	{"name":"Encontrou, porra!", "path":"rog_encontrou_porra.ogg", "ep":"01"},
@@ -88,7 +108,7 @@ func load_julinho():
 
 func complete_path(arr, path_name):
 	for item in arr:
-		item.path = path_name + item.path
+		item.path = path_name + "e" + item.ep + "/" + item.path
 	
 func get_rogerinho():
 	return rogerinho_list
