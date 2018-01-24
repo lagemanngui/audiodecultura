@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/agredir-tranquilo.ogg-b9c6c3a8d31000c9f2fefb0ead9d0c38.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e03/agredir-tranquilo.ogg"
+source_md5="b1f6ba15a14a2bc775bd8890dacb3b7e"
+
+dest_files=[ "res://.import/agredir-tranquilo.ogg-b9c6c3a8d31000c9f2fefb0ead9d0c38.oggstr" ]
+dest_md5="e51c79060bc88164a983514fb372a8e8"
+
+[params]
+
+loop=false
+loop_offset=0

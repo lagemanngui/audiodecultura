@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/inventando-palavra.ogg-ff8f160df6694c40625979419c1822b2.oggstr"
+
+[deps]
+
+source_file="res://renan/sfx/e03/inventando-palavra.ogg"
+source_md5="0cf7be34a96cf4ecaad21696565a2dc7"
+
+dest_files=[ "res://.import/inventando-palavra.ogg-ff8f160df6694c40625979419c1822b2.oggstr" ]
+dest_md5="81bdd82a2accf15dc5b1e71e98e768d1"
+
+[params]
+
+loop=false
+loop_offset=0

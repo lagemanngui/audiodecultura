@@ -48,7 +48,16 @@ func load_rogerinho():
 	{"name":"Cultura jovem", "path":"cultura_jovem.ogg", "ep": "02"},
 	{"name":"Harry Potter é droga", "path":"eh_droga.ogg", "ep": "02"},
 	{"name":"É maconha", "path":"eh_maconha.ogg", "ep": "02"},	
-	{"name":"Não é um Transformers...", "path":"nao_e_transformers.ogg", "ep": "02"}			
+	{"name":"Não é um Transformers...", "path":"nao_e_transformers.ogg", "ep": "02"},
+	{"name":"Tem que acabar a justiça", "path":"acabar-justica.ogg", "ep": "03"},
+	{"name":"Achou errado, otário!", "path":"acho-errado.ogg", "ep": "03"},		
+	{"name":"A arma do bem", "path":"arma-do-bem.ogg", "ep": "03"},
+	{"name":"Passa fumo de rolo no peito dele", "path":"fumo-de-rolo.ogg", "ep": "03"},	
+	{"name":"Idoso é covarde", "path":"idoso-covarde.ogg", "ep": "03"},	
+	{"name":"Uma salva de palmas", "path":"salva-palma.ogg", "ep": "03"},
+	{"name":"Viiiin Diesel", "path":"vin-diesel.ogg", "ep": "03"},
+	{"name":"Você é um guerreiro", "path":"voce-guerreiro.ogg", "ep": "03"}
+			
 	]
 	
 	complete_path(rogerinho_list, rog_path)
@@ -60,14 +69,17 @@ func load_renan():
 	{"name":"Excelente filme!", "path":"excelente_filme.ogg", "ep": "01"},
 	{"name":"Água na cara eu sou contra", "path":"contra_agua_nacara.ogg", "ep": "01"},
 	{"name":"Fazer curso pra ver o filme", "path":"tem_que_fazer_curso.ogg", "ep": "01"},
-	{"name":"Ele tem talento pra isso, Rogerinho", "path":"talento_pra_isso.ogg", "ep": "01"},
+	{"name":"Ele tem talento pra isso, Rogérinho", "path":"talento_pra_isso.ogg", "ep": "01"},
 	{"name":"Tem que ter Rambo", "path":"tem_rambo.ogg", "ep": "01"},
 	{"name":"Filme nacional tem livro?", "path":"filme_nacional_tem_livro.ogg", "ep": "01"},
 	{"name":"Só magia TOP", "path":"so_magia_top.ogg", "ep": "02"},
 	{"name":"Que que é edição de som?", "path":"edicao_de_som.ogg", "ep": "02"},
 	{"name":"Ele tem talento pra isso!", "path":"talento_2.ogg", "ep": "02"},
 	{"name":"A topeira voar é normal?", "path":"topera_voar.ogg", "ep": "02"},
-	{"name":"Urso é cultura jovem", "path":"urso_cultura_jovem.ogg", "ep": "02"}	
+	{"name":"Urso é cultura jovem", "path":"urso_cultura_jovem.ogg", "ep": "02"},
+	{"name":"Inventando palavra", "path":"inventando-palavra.ogg", "ep": "03"},
+	{"name":"Andou normal com 3 rodas!", "path":"tres-rodas.ogg", "ep": "03"}
+	
 	]
 	
 	complete_path(renan_list, ren_path)
@@ -80,7 +92,8 @@ func load_maurilio():
 	{"name":"Spin Off", "path":"spin_off.ogg", "ep":"01"},
 	{"name":"Livro do Rambo", "path":"livro_do_rambo.ogg", "ep":"01"},
 	{"name":"Muita criança na sala", "path":"muita_crianca.ogg", "ep":"02"},
-	{"name":"O som fica sem edição", "path":"sem_edicao.ogg", "ep":"02"}
+	{"name":"O som fica sem edição", "path":"sem_edicao.ogg", "ep":"02"},
+	{"name": "Justiça injusta", "path":"justica-injusta.ogg", "ep":"03"}
 	
 	]
 	
@@ -98,7 +111,14 @@ func load_julinho():
 	{"name":"Me da aquela moralzinha", "path":"me_da_moralzinha.ogg", "ep":"01"},
 	{"name":"Essa porra é um pato", "path":"e_um_pato.ogg", "ep":"02"},
 	{"name":"Tudo computador saporra", "path":"tudo_computador.ogg", "ep":"02"},
-	{"name":"Muito diálogo", "path":"muito_dialogo.ogg", "ep":"02"}
+	{"name":"Muito diálogo", "path":"muito_dialogo.ogg", "ep":"02"},
+	{"name":"Tranquilidade para agredir", "path":"agredir-tranquilo.ogg", "ep":"03"},
+	{"name":"O que é cinema?", "path":"cinema.ogg", "ep":"03"},
+	{"name":"Concordando com o Palestrinha", "path":"concordar-com-palestrinha.ogg", "ep":"03"},
+	{"name":"Falando merda...", "path":"falando-merda.ogg", "ep":"03"},
+	{"name":"Falo com tranquilidade", "path":"falo-com-tranquilidade.ogg", "ep":"03"}
+	
+	
 	
 	]
 	

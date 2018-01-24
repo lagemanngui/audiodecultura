@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/falo-com-tranquilidade.ogg-e89790376ed06ca5b1bf6d4066adcff9.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e03/falo-com-tranquilidade.ogg"
+source_md5="ea67e7cab72bad2fe6867a89f3c94717"
+
+dest_files=[ "res://.import/falo-com-tranquilidade.ogg-e89790376ed06ca5b1bf6d4066adcff9.oggstr" ]
+dest_md5="ccf2586fc8c8fb91b8a062e01bf19e37"
+
+[params]
+
+loop=false
+loop_offset=0

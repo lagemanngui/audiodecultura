@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/acho-errado.ogg-4eb0da296d42abe87b5104f8eb42925b.oggstr"
+
+[deps]
+
+source_file="res://rogerinho/sfx/e03/acho-errado.ogg"
+source_md5="d2400265e9a8e98834b8b0a1ccee58fe"
+
+dest_files=[ "res://.import/acho-errado.ogg-4eb0da296d42abe87b5104f8eb42925b.oggstr" ]
+dest_md5="2f200f1173971df9f00fb3bce3cc83b4"
+
+[params]
+
+loop=false
+loop_offset=0

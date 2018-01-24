@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/voce-guerreiro.ogg-31ec4d282c2de50edf68b8358494ae21.oggstr"
+
+[deps]
+
+source_file="res://rogerinho/sfx/e03/voce-guerreiro.ogg"
+source_md5="1b39e08913e8d0a0a339c52f306cce44"
+
+dest_files=[ "res://.import/voce-guerreiro.ogg-31ec4d282c2de50edf68b8358494ae21.oggstr" ]
+dest_md5="28787eae5346e7fe488a0946cd38702a"
+
+[params]
+
+loop=false
+loop_offset=0

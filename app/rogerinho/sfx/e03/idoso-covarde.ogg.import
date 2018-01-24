@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/idoso-covarde.ogg-93db8c5d33829ec4d240efb01e6eb7df.oggstr"
+
+[deps]
+
+source_file="res://rogerinho/sfx/e03/idoso-covarde.ogg"
+source_md5="66e218efbcaed4c12e1e97e94f5895e4"
+
+dest_files=[ "res://.import/idoso-covarde.ogg-93db8c5d33829ec4d240efb01e6eb7df.oggstr" ]
+dest_md5="646ec6226acaf115a6e918264dce50b2"
+
+[params]
+
+loop=false
+loop_offset=0

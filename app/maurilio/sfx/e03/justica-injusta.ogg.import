@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/justica-injusta.ogg-8ee0eec6ccba2a59a9b1bfdc28775270.oggstr"
+
+[deps]
+
+source_file="res://maurilio/sfx/e03/justica-injusta.ogg"
+source_md5="59c426e432b4ad6d224a9f20c62b0db7"
+
+dest_files=[ "res://.import/justica-injusta.ogg-8ee0eec6ccba2a59a9b1bfdc28775270.oggstr" ]
+dest_md5="2d21cc673eaccca5a28584628f3f6b17"
+
+[params]
+
+loop=false
+loop_offset=0

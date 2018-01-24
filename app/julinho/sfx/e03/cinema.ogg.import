@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cinema.ogg-bd0fb23b74abad94bc5827c3d4363f14.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e03/cinema.ogg"
+source_md5="f150ba781c87d0c37cd49a865c2e2c01"
+
+dest_files=[ "res://.import/cinema.ogg-bd0fb23b74abad94bc5827c3d4363f14.oggstr" ]
+dest_md5="daa8843d90286df79e690e7d2af49dea"
+
+[params]
+
+loop=false
+loop_offset=0

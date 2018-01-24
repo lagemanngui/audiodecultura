@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/falando-merda.ogg-e2cd079fdd0eec979948ba1ac56f0e50.oggstr"
+
+[deps]
+
+source_file="res://julinho/sfx/e03/falando-merda.ogg"
+source_md5="0d4cc3fba72cf6506b5552062d9523fd"
+
+dest_files=[ "res://.import/falando-merda.ogg-e2cd079fdd0eec979948ba1ac56f0e50.oggstr" ]
+dest_md5="eb76b7c96099e7b0321b0b09e85c3cac"
+
+[params]
+
+loop=false
+loop_offset=0
