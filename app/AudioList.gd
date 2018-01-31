@@ -18,10 +18,6 @@ func _ready():
 	load_renan()
 	load_maurilio()
 	load_julinho()
-	
-	#var test = load_files(rog_path)
-	#for item in test:
-	#	print(item)
 
 #Pega os arquivos no diretório (não utilizada ainda)
 func load_files(path):

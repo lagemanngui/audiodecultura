@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://img/bg-main.jpg" type="Texture" id=2]
@@ -20,9 +20,11 @@
 [ext_resource path="res://img/youtube_.png" type="Texture" id=18]
 [ext_resource path="res://img/twitter_.png" type="Texture" id=19]
 [ext_resource path="res://img/facebook.png" type="Texture" id=20]
-[ext_resource path="res://scenes/InfoScene.tscn" type="PackedScene" id=21]
+[ext_resource path="res://img/star.png" type="Texture" id=21]
+[ext_resource path="res://scenes/InfoScene.tscn" type="PackedScene" id=22]
+[ext_resource path="res://scenes/Favoritos.tscn" type="PackedScene" id=23]
 
-[node name="Main" type="Node" index="0"]
+[node name="Main" type="Node"]
 
 script = ExtResource( 1 )
 def_anim_speed = 0.2
@@ -119,7 +121,7 @@ btn_name = "Julinho"
 
 [node name="SecondBG" type="Sprite" parent="." index="8"]
 
-position = Vector2( 722.793, 1280.83 )
+position = Vector2( 728.793, 1282.83 )
 texture = ExtResource( 14 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
@@ -237,13 +239,37 @@ texture_normal = ExtResource( 20 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="InfoScene" parent="." index="15" instance=ExtResource( 21 )]
+[node name="FavBtn" type="TextureButton" parent="." index="15"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 30.0
+margin_top = 40.0
+margin_right = 88.0
+margin_bottom = 98.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 21 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="InfoScene" parent="." index="16" instance=ExtResource( 22 )]
 
 margin_top = 1283.0
 margin_bottom = 1283.0
 _sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="CurrentAudio" type="TextureButton" parent="." index="16" groups=[
+[node name="CurrentAudio" type="TextureButton" parent="." index="17" groups=[
 "buttons",
 ]]
 
@@ -267,6 +293,13 @@ group = null
 texture_normal = ExtResource( 6 )
 _sections_unfolded = [ "Offset", "Rect", "Textures" ]
 
+[node name="Favoritos" parent="." index="18" instance=ExtResource( 23 )]
+
+margin_left = 1459.0
+margin_top = 1281.0
+margin_right = 1499.0
+margin_bottom = 1321.0
+
 [connection signal="tween_completed" from="AnimControl" to="." method="on_anim_completed"]
 
 [connection signal="pressed" from="Info" to="." method="show_info"]
@@ -286,5 +319,7 @@ _sections_unfolded = [ "Offset", "Rect", "Textures" ]
 [connection signal="pressed" from="Twitter" to="." method="_on_Twitter_pressed"]
 
 [connection signal="pressed" from="Facebook" to="." method="_on_Facebook_pressed"]
+
+[connection signal="pressed" from="FavBtn" to="." method="_on_FavBtn_pressed"]
 
 

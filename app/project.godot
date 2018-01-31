@@ -16,6 +16,10 @@ boot_splash/image="res://img/black.png"
 config/icon="res://img/icon_renan_big.png"
 config/quit_on_go_back=false
 
+[audio]
+
+channel_disable_threshold_db=60.0
+
 [display]
 
 window/size/width=720

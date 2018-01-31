@@ -8,6 +8,7 @@ onready var audio_list = get_node("AudioList")
 onready var info_scene = get_node("InfoScene")
 onready var second_bg = get_node("SecondBG")
 onready var current_audio = get_node("CurrentAudio")
+onready var fav_scene = get_node("Favoritos")
 
 #Constantes
 const ROGERINHO = "Rogerinho"
@@ -52,9 +53,26 @@ var renan_sfx = []
 var maurilio_sfx = []
 var julinho_sfx = []
 
-
+var fav_file
+var fav_txt
+var fav_dic = {}
 
 func _ready():
+	
+	#Verifica se o arquivo de FAVORITOS existe
+	fav_file = File.new()
+	fav_file.open("user://favoritos.json", fav_file.READ)		
+	fav_txt = fav_file.get_as_text()
+	
+	if(fav_txt == ""):
+		print("Nao tem texto nenhum - criando arquivo")
+		fav_txt = "{\"favs\":[]}"
+
+	fav_dic = parse_json(fav_txt)
+	fav_file.close()
+	
+	print(str(fav_dic))
+	
 	
 	last_scene = LAST_MAIN
 	#Set a velocidade de animação
@@ -228,4 +246,10 @@ func _on_Twitter_pressed():
 
 func _on_Facebook_pressed():
 	OS.shell_open("https://www.facebook.com/tvQuase/")
+	pass
+
+
+func _on_FavBtn_pressed():
+	fav_scene.set("rect_position", Vector2(0,0))
+	fav_scene.load_favs(fav_dic)
 	pass

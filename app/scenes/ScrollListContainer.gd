@@ -10,7 +10,7 @@ func activate():
 func deactivate():
 	get_node("VBoxContainer").active = false
 
-func create_btn(titulo, play, ep):
+func create_btn(titulo, play, ep, where="main"):
 	var btn = load("res://scenes/BtnSFX.tscn")
 	var btn_ins = btn.instance()
 	btn_ins.set_name("new_btn")
@@ -20,6 +20,7 @@ func create_btn(titulo, play, ep):
 	btn_ins.connect("finished_play", self, "on_btn_finished")
 	btn_ins.connect("start_play", self, "on_btn_start", [btn_ins])
 	btn_ins.add_to_group("sfx_btns")
+	btn_ins.is_on = where
 	get_node("VBoxContainer").add_child(btn_ins)
 	
 func stop_all():
@@ -44,3 +45,4 @@ func clear_btns():
 	for node in get_node("VBoxContainer").get_children():
 		if node is TextureButton:
 			node.queue_free()
+	deactivate()
