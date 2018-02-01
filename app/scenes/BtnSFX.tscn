@@ -16,7 +16,7 @@ use_filter = true
 font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Resource", "Settings" ]
 
-[node name="TextureButton" type="TextureButton"]
+[node name="TextureButton" type="TextureButton" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -45,10 +45,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 25.0
-margin_top = 25.0
-margin_right = 686.0
-margin_bottom = 104.0
+margin_left = 27.0
+margin_top = 20.0
+margin_right = 572.0
+margin_bottom = 99.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
@@ -68,10 +68,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 25.0
-margin_top = 105.0
-margin_right = 176.0
-margin_bottom = 146.0
+margin_left = 27.0
+margin_top = 100.0
+margin_right = 178.0
+margin_bottom = 141.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
@@ -91,10 +91,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 174.0
-margin_top = 107.0
-margin_right = 325.0
-margin_bottom = 148.0
+margin_left = 176.0
+margin_top = 102.0
+margin_right = 327.0
+margin_bottom = 143.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
@@ -119,8 +119,9 @@ _sections_unfolded = [ "Pause" ]
 
 [node name="picon" type="Sprite" parent="." index="4"]
 
-position = Vector2( 653.353, 40.0583 )
-scale = Vector2( 1.53254, 1.53254 )
+visible = false
+position = Vector2( 25.3627, 26.5517 )
+scale = Vector2( 1.01519, 1.01519 )
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Material", "Visibility", "Z Index" ]
 
@@ -131,10 +132,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 634.0
-margin_top = 91.0
+margin_left = 597.0
+margin_top = 37.0
 margin_right = 682.0
-margin_bottom = 139.0
+margin_bottom = 122.0
 rect_pivot_offset = Vector2( 0, 0 )
 focus_mode = 2
 mouse_filter = 0

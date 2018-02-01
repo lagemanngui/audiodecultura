@@ -21,11 +21,13 @@ func load_favs(favs_dic):
 
 func _on_Fechar_pressed():
 	self.set("rect_position",Vector2(2000,2000))
-	fav_list.clear_btns()	
-	pass # replace with function body
+	fav_list.clear_btns()
+	get_parent().last_scene = get_parent().LAST_FAV
+	pass 
 
 
 func _on_BtnVoltar_pressed():
 	self.set("rect_position",Vector2(2000,2000))
 	fav_list.clear_btns()
-	pass # replace with function body
+	get_parent().last_scene = get_parent().LAST_FAV	
+	pass

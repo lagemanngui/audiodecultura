@@ -16,7 +16,7 @@ use_filter = true
 font_data = ExtResource( 5 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Favoritos" type="Control" index="0"]
+[node name="Favoritos" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -98,6 +98,7 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Fechar" type="TextureButton" parent="." index="5"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0

@@ -21,6 +21,7 @@ const ANIM_SHOW = 0
 const LAST_MAIN = "Main"
 const LAST_INFO = "Info"
 const LAST_SFX = "Sfx"
+const LAST_FAV = "Fav"
 
 
 
@@ -59,6 +60,7 @@ var fav_dic = {}
 
 func _ready():
 	
+	
 	#Verifica se o arquivo de FAVORITOS existe
 	fav_file = File.new()
 	fav_file.open("user://favoritos.json", fav_file.READ)		
@@ -95,6 +97,9 @@ func _notification(what):
 			hide_info()
 		elif last_scene == LAST_SFX:
 			show_menu_btns()
+		elif last_scene == LAST_FAV:
+			hide_favs()
+			
 			
 
 #Função que chama o menu de audios baseado
@@ -248,7 +253,10 @@ func _on_Facebook_pressed():
 	OS.shell_open("https://www.facebook.com/tvQuase/")
 	pass
 
-
+func hide_favs():
+	last_scene = LAST_MAIN
+	fav_scene._on_Fechar_pressed()
+	
 func _on_FavBtn_pressed():
 	fav_scene.set("rect_position", Vector2(0,0))
 	fav_scene.load_favs(fav_dic)
