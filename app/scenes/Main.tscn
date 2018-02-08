@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://img/bg-main.jpg" type="Texture" id=2]
@@ -23,8 +23,9 @@
 [ext_resource path="res://img/star.png" type="Texture" id=21]
 [ext_resource path="res://scenes/InfoScene.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/Favoritos.tscn" type="PackedScene" id=23]
+[ext_resource path="res://img/folder.png" type="Texture" id=24]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 def_anim_speed = 0.2
@@ -245,10 +246,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 30.0
-margin_top = 40.0
-margin_right = 88.0
-margin_bottom = 98.0
+margin_left = 23.0
+margin_top = 28.0
+margin_right = 81.0
+margin_bottom = 86.0
 rect_pivot_offset = Vector2( 0, 0 )
 focus_mode = 2
 mouse_filter = 0
@@ -300,6 +301,30 @@ margin_top = 1281.0
 margin_right = 1499.0
 margin_bottom = 1321.0
 
+[node name="Downloads" type="TextureButton" parent="." index="19"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 29.0
+margin_top = 119.0
+margin_right = 79.0
+margin_bottom = 169.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 24 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
 [connection signal="tween_completed" from="AnimControl" to="." method="on_anim_completed"]
 
 [connection signal="pressed" from="Info" to="." method="show_info"]
@@ -321,5 +346,7 @@ margin_bottom = 1321.0
 [connection signal="pressed" from="Facebook" to="." method="_on_Facebook_pressed"]
 
 [connection signal="pressed" from="FavBtn" to="." method="_on_FavBtn_pressed"]
+
+[connection signal="pressed" from="Downloads" to="." method="_on_Downloads_pressed"]
 
 

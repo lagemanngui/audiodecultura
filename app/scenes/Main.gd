@@ -23,6 +23,8 @@ const LAST_INFO = "Info"
 const LAST_SFX = "Sfx"
 const LAST_FAV = "Fav"
 
+const FAV_PATH = "user://favoritos.json"
+
 
 
 #Velocidade da animação das janelas
@@ -63,15 +65,22 @@ func _ready():
 	
 	#Verifica se o arquivo de FAVORITOS existe
 	fav_file = File.new()
-	fav_file.open("user://favoritos.json", fav_file.READ)		
-	fav_txt = fav_file.get_as_text()
-	
-	if(fav_txt == ""):
+	if fav_file.file_exists(FAV_PATH):
+		print("Arquivo existe, vamos abrir")
+		fav_file.open(FAV_PATH, fav_file.READ)
+	else:
 		print("Nao tem texto nenhum - criando arquivo")
 		fav_txt = "{\"favs\":[]}"
-
+		fav_file.open(FAV_PATH, fav_file.WRITE)
+		fav_file.store_string(fav_txt)
+		fav_file.close()
+		fav_file.open(FAV_PATH, fav_file.READ)
+	
+	fav_txt = fav_file.get_as_text()
 	fav_dic = parse_json(fav_txt)
 	fav_file.close()
+	
+	
 	
 	print(str(fav_dic))
 	
@@ -260,4 +269,10 @@ func hide_favs():
 func _on_FavBtn_pressed():
 	fav_scene.set("rect_position", Vector2(0,0))
 	fav_scene.load_favs(fav_dic)
+	pass
+
+
+func _on_Downloads_pressed():
+	var dir = Directory.new()	
+	OS.shell_open("C:/Users/Guilherme/AppData/Roaming/Godot/app_userdata/Audio de Cultura")
 	pass

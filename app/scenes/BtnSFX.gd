@@ -107,3 +107,11 @@ func set_fav_to():
 	n_f.close()
 	update_fav()
 	pass # replace with function body
+
+
+func _on_Download_pressed():
+	var dir = Directory.new()
+	dir.open("user://")
+	dir.make_dir("Downloads")
+	dir.copy(mypath, "user://Downloads/" + myname + ".ogg")	
+	pass

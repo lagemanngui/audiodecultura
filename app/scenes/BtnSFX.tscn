@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://img/btn-def3.png" type="Texture" id=1]
 [ext_resource path="res://img/btn_def3_p.jpg" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://scenes/AudioPlayer.gd" type="Script" id=5]
 [ext_resource path="res://img/music-player (1).png" type="Texture" id=6]
 [ext_resource path="res://img/star.png" type="Texture" id=7]
+[ext_resource path="res://img/down-arrow.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -16,7 +17,7 @@ use_filter = true
 font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Resource", "Settings" ]
 
-[node name="TextureButton" type="TextureButton" index="0"]
+[node name="TextureButton" type="TextureButton"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -47,8 +48,8 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 27.0
 margin_top = 20.0
-margin_right = 572.0
-margin_bottom = 99.0
+margin_right = 514.0
+margin_bottom = 108.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
@@ -150,6 +151,30 @@ texture_normal = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures", "Visibility" ]
 
+[node name="Download" type="TextureButton" parent="." index="6"]
+
+modulate = Color( 0.878431, 0.878431, 0.878431, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 514.0
+margin_top = 54.0
+margin_right = 578.0
+margin_bottom = 118.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 8 )
+_sections_unfolded = [ "Textures", "Visibility" ]
+
 [connection signal="pressed" from="." to="AudioPlayer" method="play_sfx"]
 
 [connection signal="start_play" from="." to="." method="_on_TextureButton_start_play"]
@@ -157,5 +182,7 @@ _sections_unfolded = [ "Rect", "Textures", "Visibility" ]
 [connection signal="finished" from="AudioPlayer" to="." method="_on_AudioPlayer_finished"]
 
 [connection signal="pressed" from="AddFav" to="." method="set_fav_to"]
+
+[connection signal="pressed" from="Download" to="." method="_on_Download_pressed"]
 
 
